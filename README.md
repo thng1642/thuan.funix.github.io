@@ -2,7 +2,7 @@
 
 ## HOSTING UI (HTML/CSS)
 
-[Demo page](https://github.com/thng1642/thuan.funix.github.io.git)
+[Demo page](https://thng1642.github.io/thuan.funix.github.io/)
 
 ```
 Assignment 02 Stater
