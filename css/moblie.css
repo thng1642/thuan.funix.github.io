@@ -1,0 +1,80 @@
+
+
+@media only screen and (min-width: 600px) and (max-width: 768px), (max-width: 600px) {
+
+    /* ======= BANNER ======== */
+    #banner {
+        margin-bottom: 32px;
+    }
+
+    /* ====== NAVIGATION BAR ======= */
+    #nav-bar nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        justify-items: start;
+        row-gap: 32px;
+        margin-bottom: 32px;
+        padding-left: 32px;
+        text-transform: uppercase;
+    }
+    #nav-bar #intro {
+        display: none;
+    }
+
+    /* ====== JOB INFO ====== */
+    #list-cards {
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0;
+    }
+    /* .list-items > ul {
+        padding-left: 0;
+    }
+    .inside {
+        padding-left: 1em;
+    } */
+
+    /* ======= CERTIFICATE ITEMS ======= */
+    /* #details-certificate {
+        margin: 0;
+    } */
+    .certificate-item {
+        
+        position: relative;
+    }
+
+    .overview-certificate ul {
+        
+        padding-left: 0;
+        
+    }
+    .certificate-item:not(:last-child):before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1.2px;
+        background-color: #ec82588a;
+        bottom: 0;
+        left: 0;
+    }
+    .certificate-item > img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* ======== PROJECT ======== */
+    .project-card {
+        padding: 0 !important;
+    }
+    .overview-project {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    /* =========== FOOTER ============= */
+    #footer a span{
+        display: none;
+    }
+}

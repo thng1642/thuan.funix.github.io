@@ -1,0 +1,84 @@
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    /* =================== NAVIGATION =================== */
+    #nav-bar {
+        position: relative;
+        height: 60px !important;
+    }
+
+    #nav-bar > nav {
+        /* background: #c42e2e; */
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) 60px repeat(2, 1fr);
+    }
+    #nav-bar a:link, a:visited {
+        height: 60px !important;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    #intro {
+        height: 60px;
+    } 
+    div#intro > h1 {
+        display: none;
+    }
+    div#intro > span {
+        display: none;
+    }
+    /* ======== JOB INFO ======== */
+    #list-cards {
+        position: relative;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        gap: 24px;
+    }
+    
+    /* ======== CERTIFICATE ======== */
+    .certificate-item > img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .certificate-item:nth-child(2n + 3)::after {
+        content: '';
+        width: 200%;
+        height: 1.2px;
+        position: absolute;
+        background-color: #ec82588a;
+        top: -32px
+    }
+    #details-certificate > div:nth-child(2n) {
+        border-left: 1.2px solid #ec82588a;
+    }
+    .overview-certificate ul {
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+    /* ======== PROJECT ======== */
+    .list-projects {
+        margin: 0 0 64px 0 !important;
+        padding: 0 !important;
+        position: relative;
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        column-gap: 12px;
+    }
+    /* h3.project-name {
+        font-weight: 400;
+        font-size: 16px;
+    } */
+    .overview-project {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .overview-project>span {
+        grid-row: 1 / span 2;
+    }
+}
